@@ -1,7 +1,7 @@
 import Food from './images/restauranfood.jpg';
 import './MainPage.css';
-import Testimonial from './Testimonial';
-import About from './About.css'
+import Testimonials from './Testimonials.js';
+import About from './About.js'
 import Card from './Card';
 
 
@@ -26,13 +26,7 @@ function MainPage() {
             <Card/>
         </section>
 
-        <section>
-            <h1>Testimonials</h1>
-            <Testimonial/>
-            <Testimonial/>
-            <Testimonial/>
-            <Testimonial/>
-        </section>
+        <Testimonials/>
 
         <About/>
       </main>
