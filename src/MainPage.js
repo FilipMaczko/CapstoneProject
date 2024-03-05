@@ -1,4 +1,5 @@
 import Food from './images/restauranfood.jpg';
+import './MainPage.css';
 import MarioAndAdrianA from './images/Mario and Adrian A.jpg';
 import MarioAndAdrianB from './images/Mario and Adrian b.jpg';
 

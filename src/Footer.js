@@ -1,12 +1,13 @@
 import Logo from './images/Asset 20@4x.png';
+import './Footer.css';
 
 function Footer() {
     return (
       <footer>
-        <div class = 'footerColumn'>
-          <img src = {Logo}  alt ="logo"/>
+        <div className = 'footerColumn'>
+          <img src = {Logo} width = '33%'  alt ="logo"/>
         </div>
-        <nav class = 'footerColumn'>
+        <nav className = 'footerColumn'>
           <h1>Navigation</h1>
             <ul>
               <li>Home</li>
@@ -17,7 +18,7 @@ function Footer() {
               <li>Login</li>
             </ul>
         </nav>
-        <div class = 'footerColumn'>
+        <div className = 'footerColumn'>
         <h1>Contact us</h1>
             <ul>
               <li>Adress</li>
@@ -25,7 +26,7 @@ function Footer() {
               <li>Phone number</li>
             </ul>
         </div>
-        <div class = 'footerColumn'>
+        <div className = 'footerColumn'>
           <h1>Social media</h1>
             <ul>
               <li>Facebook</li>

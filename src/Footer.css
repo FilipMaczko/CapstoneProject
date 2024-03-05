@@ -1,0 +1,26 @@
+.footerColumn{
+    width: 100%;
+}
+
+footer{
+    grid-column: span 1;
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (max-width: 500px) {
+    .footerColumn {grid-column: span 2;}
+    footer { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 500px) {
+    .footerColumn {grid-column: span 3;}
+    footer { grid-template-columns: repeat(6, 1fr); }
+  }
+
+@media (min-width: 1000px) {
+    .footerColumn {grid-column: span 3;}
+    footer { grid-template-columns: repeat(12, 1fr); }
+  }
+

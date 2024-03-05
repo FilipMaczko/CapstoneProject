@@ -1,0 +1,22 @@
+img{
+    width: 100%;
+}
+
+section{
+    grid-column: span 1;
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (max-width: 500px) {
+    section { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 500px) {
+    section { grid-template-columns: repeat(6, 1fr); }
+  }
+
+@media (min-width: 1000px) {
+    section { grid-template-columns: repeat(12, 1fr); }
+  }

@@ -13,7 +13,6 @@ function App() {
       <meta property="og:description" content="Little Lemon restaurant page" />
       <meta property="og:image" content="./images/Asset 20@4x.png" />
     </Helmet>
-    
     <Header/>
     <MainPage/>
     <Footer/>
