@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-      <footer>
+      <footer className='highlightedSection'>
         <div className = 'footerColumn'>
           <img src = {Logo} width = '33%'  alt ="logo"/>
         </div>

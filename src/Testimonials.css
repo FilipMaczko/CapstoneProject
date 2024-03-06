@@ -1,18 +1,18 @@
-.testimonialColumn, .sectionTitle{
+.testimonialColumn, .testimonialsSectionTitle{
     width: 100%;
 }
 
 @media (max-width: 500px) {
-    .sectionTitle {grid-column: span 2;}
+    .testimonialsSectionTitle {grid-column: span 2;}
     .testimonialColumn {grid-column: span 2;}
   }
 
 @media (min-width: 500px) {
-    .sectionTitle {grid-column: span 6;}
+    .testimonialsSectionTitle {grid-column: span 6;}
     .testimonialColumn {grid-column: span 3;}
   }
 
 @media (min-width: 1000px) {
-    .sectionTitle {grid-column: span 12;}
+    .testimonialsSectionTitle {grid-column: span 12;}
     .testimonialColumn {grid-column: span 3;}
   }

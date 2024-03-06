@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    .aboutColumn {grid-column: span 2;}
+  }
+
+@media (min-width: 500px) {
+    .aboutColumn {grid-column: span 3;}
+  }
+
+@media (min-width: 1000px) {
+    .aboutColumn {grid-column: span 6;}
+  }

@@ -1,16 +1,26 @@
 import MarioAndAdrianA from './images/Mario and Adrian A.jpg';
 import MarioAndAdrianB from './images/Mario and Adrian b.jpg';
+import './About.css'
 
 function About() {
     return (
       <section className = "about">
-      <h1>Greek salad</h1>
-      <h2>Order a delivery</h2>
-      <p>The famous greek salad of the crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
-      <img src ={MarioAndAdrianA} alt='Mario and Adrian'/>
-      <img src ={MarioAndAdrianB} alt='Mario and Adrian'/>
+      <div className = 'aboutColumn'>
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
+        <p>
+          Little lemon is a famili owned, italian restarant created by two brothers Mario and Adrian. 
+          They passion for cooking good fod and unique atmosphere is what make every meal in our restaurant into a special moment for you and your loved ones.
+        </p>
+      </div>
+
+      <div className='aboutColumn'>
+        <img src ={MarioAndAdrianA} alt='Mario and Adrian'/>
+        <img src ={MarioAndAdrianB} alt='Mario and Adrian'/>
+      </div>
+
       </section>
     );
   }
-  
+
   export default About;

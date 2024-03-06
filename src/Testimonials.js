@@ -3,8 +3,8 @@ import Testimonial from './Testimonial.js'
 
 function Testimonials() {
     return (
-        <section>
-            <div className='sectionTitle'>
+        <section className = 'highlightedSection'>
+            <div className='testimonialsSectionTitle'>
                 <h1>Testimonials</h1>
             </div>
             <div className='testimonialColumn'>

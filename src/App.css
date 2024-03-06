@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text:regular,medium,semibold,bold');
+@import url('https://fonts.googleapis.com/css?family=Karla:extralight,light,regular,medium,semibold, bold, extrabold');
+
+.displayTitle{
+  font-size: 64px;
+  font-family: 'Markazi Text';
+  font-style: medium;
+}
+
+.highlightedSection{
+  background-color: #495E57;
+}
