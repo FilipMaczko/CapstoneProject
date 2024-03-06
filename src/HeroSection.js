@@ -6,8 +6,8 @@ function HeroSection() {
         <section className='highlightedSection'>
             <div className='heroSectionColumn'>
                 <h1 className='displayTitle'>Little Lenom</h1>
-                <h2>Chicago</h2>
-                <p>
+                <h2 className='subTitle'>Chicago</h2>
+                <p className='paragraphText'>
                     Lorem ipsum ...
                 </p>
                 <button>Reserve a table</button>

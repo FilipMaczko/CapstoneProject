@@ -46,6 +46,47 @@
   font-style: medium;
 }
 
+.subTitle{
+  font-size: 40px;
+  font-family: 'Markazi Text';
+}
+
+.leadTitle{
+  font-size: 18px;
+  font-family: 'Karla';
+  font-style: medium;
+}
+
+.sectionTitle{
+  font-size: 12px;
+  font-family: 'Karla';
+  font-weight: 900;
+}
+
+.sectionCategories{
+  font-size: 16px;
+  font-family: 'Karla';
+  font-weight: 900;
+}
+
+.cardTitle{
+  font-size: 18px;
+  font-family: 'Karla';
+  font-weight: bold;
+}
+
+.paragraphText{
+  font-size: 16px;
+  font-family: 'Karla';
+  line-height: 1.5;
+}
+
+.highlighText{
+  font-size: 16px;
+  font-family: 'Karla';
+  font-style: medium;
+}
+
 .highlightedSection{
   background-color: #495E57;
 }
