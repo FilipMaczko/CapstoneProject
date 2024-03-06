@@ -4,7 +4,9 @@ import './Specials.css'
 function Specials() {
     return (
         <section>
-            <h1 className = 'sectionTitle'>Specials</h1>
+            <div className = 'specialsTitle'>
+            <h1 className = 'displayTitle'>Specials</h1>
+            </div>
             <button className='orderButton'>Online Menu</button>
             <div className='cardColumn'>
                 <Card/>

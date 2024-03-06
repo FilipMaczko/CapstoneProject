@@ -1,24 +1,26 @@
+import './Nav.css'
+
 function Nav() {
     return (
-        <nav>
-          <ul>
+        <nav className = 'headerNav'>
+          <ul className = 'cardTitle'>
             <li>
-              <a>Home</a>
+              Home
             </li>
             <li>
-              <a>About</a>
+              About
             </li>
             <li>
-              <a>Menu</a>
+              Menu
             </li>
             <li>
-              <a>Reservations</a>
+              Reservations
             </li>
             <li>
-              <a>Order Online</a>
+              Order Online
             </li>
             <li>
-              <a>Login</a>
+              Login
             </li>
           </ul>
         </nav>

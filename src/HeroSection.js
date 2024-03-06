@@ -5,7 +5,7 @@ function HeroSection() {
     return (
         <section className='highlightedSection'>
             <div className='heroSectionColumn'>
-                <h1 className='displayTitle'>Little Lenom</h1>
+                <h1 className='displayTitle'>Little Lemon</h1>
                 <h2 className='subTitle'>Chicago</h2>
                 <p className='paragraphText'>
                     Lorem ipsum ...
@@ -14,7 +14,7 @@ function HeroSection() {
             </div>
 
             <div className='heroSectionColumn'>
-                <img src ={Food} alt='restaurant food'/>
+                <img className='heroImage' src ={Food} alt='restaurant food'/>
             </div>
         </section>
     );

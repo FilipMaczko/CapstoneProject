@@ -1,17 +1,17 @@
 @media (max-width: 500px) {
-    .sectionTitle {grid-column: span 2;}
+    .specialsTitle {grid-column: span 2;}
     .orderButton {grid-column: span 2;}
     .cardColumn {grid-column: span 2;}
   }
 
 @media (min-width: 500px) {
-    .sectionTitle {grid-column: span 4;}
+    .specialsTitle {grid-column: span 4;}
     .orderButton {grid-column: span 2;}
     .cardColumn {grid-column: span 2;}
   }
 
 @media (min-width: 1000px) {
-    .sectionTitle {grid-column: span 8;}
+    .specialsTitle {grid-column: span 8;}
     .orderButton {grid-column: span 4;}
     .cardColumn {grid-column: span 4;}
   }

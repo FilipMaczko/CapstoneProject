@@ -1,7 +1,9 @@
+import Foto from './images/greek salad.jpg';
+
 function Card() {
   return (
     <div className = "card">
-    <img src = './images/greek salad.jpg'/>
+    <img src = {Foto} alt = 'Greek salad'/>
     <h1>Greek salad</h1>
     <span>$12.99</span>
     <p>The famous greek salad of the crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>

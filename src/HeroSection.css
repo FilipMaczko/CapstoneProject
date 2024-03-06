@@ -9,3 +9,8 @@
 @media (min-width: 1000px) {
     .heroSectionColumn {grid-column: span 6;}
   }
+
+  .heroImage{
+    max-width: 375px;
+    max-height: 435px;
+  }

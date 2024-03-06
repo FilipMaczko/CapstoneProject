@@ -1,3 +1,9 @@
-nav{
-    width: 100%;
+.headerNav ul{ 
+    grid-template-columns: repeat(6, 1fr); 
+    display: grid;
+    gap: 1rem;
+}
+
+.headerNav li {
+    display: inline;
 }
