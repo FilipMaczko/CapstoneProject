@@ -6,6 +6,7 @@ import MainPage from './MainPage.js'
 function App() {
   return (
     <>
+    <div className = 'container'>
     <Helmet>
       <title>Little Lemon</title>
       <meta name="description" content="Little Lemon restaurant page" />
@@ -16,6 +17,7 @@ function App() {
     <Header/>
     <MainPage/>
     <Footer/>
+    </div>
     </>
   );
 }

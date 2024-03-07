@@ -13,4 +13,10 @@
   .heroImage{
     max-width: 375px;
     max-height: 435px;
+    display: block;
+    margin-left: auto;
+  }
+
+  .heroSectionColumn .paragraphText{
+    max-width: 300px;
   }
