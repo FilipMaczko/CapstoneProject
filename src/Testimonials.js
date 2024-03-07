@@ -5,7 +5,7 @@ function Testimonials() {
     return (
         <section className = 'highlightedSection'>
             <div className='testimonialsSectionTitle'>
-                <h1 className='cardTitle'>Testimonials</h1>
+                <h1 className='displayTitle'>Testimonials</h1>
             </div>
             <div className='testimonialColumn'>
                 <Testimonial/>

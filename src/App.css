@@ -99,6 +99,8 @@ ul{
 }
 
 button{
+  font-size: 18px;
+  font-family: 'Karla';
   background-color: #F4CE14;
   height: 60px;
   width: 200px;

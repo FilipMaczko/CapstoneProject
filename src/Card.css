@@ -1,0 +1,17 @@
+.card{
+    border-radius: 16px;
+    background-color: #EDEFEE;
+}
+
+.cardContent{
+    padding: 1rem;
+}
+
+.cardContent h1{
+    display: flex;
+}
+
+.cardContent span{
+    display: flex;
+    color: #EE9972;
+}

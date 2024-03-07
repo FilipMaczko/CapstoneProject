@@ -1,13 +1,16 @@
 import Foto from './images/greek salad.jpg';
+import './Card.css';
 
 function Card() {
   return (
     <div className = "card">
     <img src = {Foto} alt = 'Greek salad'/>
-    <h1>Greek salad</h1>
-    <span>$12.99</span>
-    <p>The famous greek salad of the crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
-    <h2>Order a delivery</h2>
+    <div className= 'cardContent'>
+    <h1 className='cardTitle'>Greek salad</h1>
+    <span className='highlighText'>$12.99</span>
+    <p className = 'paragraphText'>The famous greek salad of the crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
+    <h2 className = 'highlighText'>Order a delivery</h2>
+    </div>
     </div>
   );
 }
