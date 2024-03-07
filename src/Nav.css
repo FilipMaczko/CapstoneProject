@@ -1,9 +1,22 @@
 .headerNav ul{ 
-    grid-template-columns: repeat(6, 1fr); 
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 20px;
 }
 
 .headerNav li {
     display: inline;
 }
+
+@media (max-width: 600px) {
+    .headerNav ul{ flex-direction: column; }
+  }
+
+@media (min-width: 600px) {
+    .headerNav ul{ flex-direction: row; }
+  }

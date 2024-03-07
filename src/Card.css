@@ -7,11 +7,20 @@
     padding: 1rem;
 }
 
-.cardContent h1{
+.cardHeader{ 
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.cardContent h1{
+    width: 75%;
 }
 
 .cardContent span{
-    display: flex;
+    text-align: right;
+    width:25%;
     color: #EE9972;
 }
