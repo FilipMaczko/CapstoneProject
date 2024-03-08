@@ -1,5 +1,6 @@
 import Food from './images/restauranfood.jpg';
 import './HeroSection.css';
+import { Link } from "react-router-dom";
 
 function HeroSection() {
     return (
@@ -10,7 +11,9 @@ function HeroSection() {
                 <p className='paragraphText'>
                     We are family owned Mediterranean restaurant, focused on tradicional dishes served with a modern twist.
                 </p>
-                <button>Reserve a table</button>
+                <Link to='/booking'>
+                    <button>Reserve a table</button>
+                </Link>
             </div>
 
             <div className='heroSectionColumn'>

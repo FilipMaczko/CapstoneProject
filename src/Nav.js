@@ -1,11 +1,12 @@
 import './Nav.css'
+import { Link } from "react-router-dom";
 
 function Nav() {
     return (
         <nav className = 'headerNav'>
           <ul className = 'cardTitle'>
             <li>
-              Home
+            <Link to="/">Home</Link>
             </li>
             <li>
               About
@@ -14,7 +15,7 @@ function Nav() {
               Menu
             </li>
             <li>
-              Reservations
+            <Link to="/booking">Reservations</Link>
             </li>
             <li>
               Order Online

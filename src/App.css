@@ -124,6 +124,25 @@ img{
   max-width: 1200px;
 }
 
+section{
+  grid-column: span 1;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  section { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 500px) {
+  section { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (min-width: 1000px) {
+  section { grid-template-columns: repeat(12, 1fr); }
+}
+
 /* button:hover{
   background-color: #495E57;
   color: #EDEFEE;
