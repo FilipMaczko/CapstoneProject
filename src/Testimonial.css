@@ -4,3 +4,22 @@
     padding: 1rem;
     color: #333333;
 }
+
+.personaRaw{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.personaRaw h2{
+    width:75%;
+    padding:2rem;
+    box-sizing: border-box;
+}
+
+.personaRaw img{
+    margin-top: 1rem;
+    width:25%;
+}

@@ -1,11 +1,11 @@
-import Logo from './images/Asset 20@4x.png';
+import Logo from './images/Asset 18@4x.png';
 import './Footer.css';
 
 function Footer() {
     return (
       <footer className='highlightedSection'>
         <div className = 'footerColumn'>
-          <img src = {Logo} width = '33%'  alt ="logo"/>
+          <img className= 'footerLogo' src = {Logo}  alt ="logo"/>
         </div>
         <nav className = 'footerColumn'>
           <h1>Navigation</h1>

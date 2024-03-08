@@ -2,6 +2,14 @@
     width: 100%;
 }
 
+.footerLogo{
+  height: auto;
+  width: auto;
+  max-height: 12rem;
+  padding-left: 1rem;
+  border-radius: 0px;
+}
+
 footer{
     grid-column: span 1;
     padding: 1rem;
