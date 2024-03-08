@@ -1,5 +1,21 @@
+.heroImage{
+  max-width: 375px;
+  max-height: 435px;
+  display: block;
+  margin-left: auto;
+}
+
+.heroSectionColumn .paragraphText{
+  max-width: 300px;
+}
+
 @media (max-width: 500px) {
     .heroSectionColumn {grid-column: span 2;}
+    .heroImage{
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 0px;
+    }  
   }
 
 @media (min-width: 500px) {
@@ -8,15 +24,4 @@
 
 @media (min-width: 1000px) {
     .heroSectionColumn {grid-column: span 6;}
-  }
-
-  .heroImage{
-    max-width: 375px;
-    max-height: 435px;
-    display: block;
-    margin-left: auto;
-  }
-
-  .heroSectionColumn .paragraphText{
-    max-width: 300px;
   }

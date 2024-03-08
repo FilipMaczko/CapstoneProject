@@ -1,17 +1,17 @@
 @media (max-width: 500px) {
     .specialsTitle {grid-column: span 2;}
-    .orderButton {grid-column: span 2;}
+    .orderButton {grid-column: span 2; margin-left: 0px;}
     .cardColumn {grid-column: span 2;}
   }
 
 @media (min-width: 500px) {
     .specialsTitle {grid-column: span 4;}
-    .orderButton {grid-column: span 2;}
+    .orderButton {grid-column: span 2; margin-left: auto;}
     .cardColumn {grid-column: span 2;}
   }
 
 @media (min-width: 1000px) {
     .specialsTitle {grid-column: span 8;}
-    .orderButton {grid-column: span 4;}
+    .orderButton {grid-column: span 4; margin-left: auto;}
     .cardColumn {grid-column: span 4;}
   }

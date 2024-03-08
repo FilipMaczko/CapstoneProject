@@ -1,10 +1,12 @@
 img{
-    width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 section{
     grid-column: span 1;
-    padding: 1rem;
+    padding: 2rem;
     display: grid;
     gap: 1rem;
 }
