@@ -23,6 +23,11 @@ footer li{
   line-height: 1.5;
 }
 
+footer a{
+  color: #EDEFEE;
+  text-decoration: none;
+}
+
 @media (max-width: 500px) {
     .footerColumn {grid-column: span 2;}
     footer { grid-template-columns: repeat(2, 1fr); }

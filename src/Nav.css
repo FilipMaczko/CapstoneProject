@@ -13,6 +13,11 @@
     display: inline;
 }
 
+.headerNav a {
+  color: black;
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
     .headerNav ul{ flex-direction: column; }
   }
