@@ -2,11 +2,11 @@ import BookingForm from './BookingForm.js';
 import HeroSection from './HeroSection.js';
 
 
-const BookingPage = () => {
+const BookingPage = (props) => {
   return (
       <main>
         <HeroSection/>
-        <BookingForm/>
+        <BookingForm aviableHours= {props.aviableHours}/>
     </main>
   );
 };

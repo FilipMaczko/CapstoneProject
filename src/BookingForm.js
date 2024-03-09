@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
+import './BookingForm.css'
 
 
-const BookingForm = () => {
-  const [aviableHours, setAviableHours] = useState([
-    "17.00",
-    "18.00",
-    "19.00",
-    "20.00"
-  ]);
-
-  const hourOptions = aviableHours.map( x => <option>{x}</option>);
+const BookingForm = (props) => {
+  const hourOptions = props.aviableHours.hours.map( x => <option id={x}>{x}</option>);
   
   const [formData, setFormData] = useState({
       fullName: '',
@@ -90,10 +84,12 @@ const BookingForm = () => {
     };
   
     return (
+      <section>
       <form onSubmit={handleSubmit}>
         <div className='formControl'>
           <label htmlFor="fullName">Full Name</label>
           <input
+            className={formErrors.nameError.length>0 ? 'errorBox' : ''}
             id="fullName"
             name="fullName"
             value={formData.fullName}
@@ -106,6 +102,7 @@ const BookingForm = () => {
         <div className='formControl'>
           <label htmlFor="phoneNumber">Phone number</label>
           <input
+            className={formErrors.phoneError.length>0 ? 'errorBox' : ''}
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
@@ -127,7 +124,8 @@ const BookingForm = () => {
         <div className='formControl'>
           <label htmlFor="reservationDate">Reservation date</label>
           <input
-            type="datetime-local"
+            className={formErrors.dateError.length>0 ? 'errorBox' : ''}
+            type="date"
             id="reservationDate"
             name="reservationDate"
             value={formData.reservationDate}
@@ -151,10 +149,13 @@ const BookingForm = () => {
           />
           <p className="errorMessage"></p>
         </div>
-        <button type="submit">
-          {"Submit"}
-        </button>
+        <div className= 'buttonHolder'>
+          <button type="submit"> 
+            {"Submit"}
+          </button>
+        </div>
       </form>
+      </section>
     );
 };
 

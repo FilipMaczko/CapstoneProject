@@ -2,10 +2,7 @@ import './App.css';
 import { Helmet } from 'react-helmet';
 import Header from './Header.js';
 import Footer from './Footer.js';
-import MainPage from './MainPage.js'
-import BookingPage from './BookingPage.js';
-import { Routes, Route} from "react-router-dom";
-
+import Main from './Main'
 function App() {
   return (
     <>
@@ -18,12 +15,7 @@ function App() {
       <meta property="og:image" content="./images/Asset 20@4x.png" />
     </Helmet>
     <Header/>
-    
-    <Routes> 
-      <Route path="/" element={<MainPage />}></Route>
-      <Route path="/booking" element={<BookingPage />}></Route>
-    </Routes>
-    
+    <Main/>
     <Footer/>
     </div>
     </>

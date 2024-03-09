@@ -1,0 +1,86 @@
+.formControl{
+    border-radius: 16px;
+    font-family: 'Karla';
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.formControl input, select{
+    border-width: 0.25rcap;
+    border-color: black;
+    border-radius: 16px;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.formControl label{
+    font-size: 18px;
+    font-family: 'Karla';
+    font-weight: bold;
+    width: 25%;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+form .errorBox{
+    border-color: red;
+    color: red;
+}
+
+.errorMessage{
+    font-size: 16px;
+    font-family: 'Karla';
+    font-style: medium;
+    color: red;
+}
+
+form{
+    grid-column: span 12;
+}
+
+.buttonHolder{
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .formControl label{
+        width: 100%;
+    }
+    .formControl input, select{
+        width: 100%;
+    }
+  }
+
+@media (min-width: 500px) {
+    .formControl label{
+        width: 50%;
+    }
+    .formControl input, select{
+        width: 50%;
+    }
+  }
+
+@media (min-width: 1000px) {
+    .formControl label{
+        width: 25%;
+    }
+    .formControl input, select{
+        width: 75%;
+    }
+  }
