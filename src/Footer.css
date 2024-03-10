@@ -28,12 +28,12 @@ footer a{
   text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .footerColumn {grid-column: span 2;}
     footer { grid-template-columns: repeat(2, 1fr); }
   }
 
-@media (min-width: 500px) {
+@media (min-width: 701px) {
     .footerColumn {grid-column: span 3;}
     footer { grid-template-columns: repeat(6, 1fr); }
   }

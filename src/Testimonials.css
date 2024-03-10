@@ -2,12 +2,12 @@
     width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .testimonialsSectionTitle {grid-column: span 2;}
     .testimonialColumn {grid-column: span 2;}
   }
 
-@media (min-width: 500px) {
+@media (min-width: 701px) {
     .testimonialsSectionTitle {grid-column: span 6;}
     .testimonialColumn {grid-column: span 3;}
   }

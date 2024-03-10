@@ -9,7 +9,7 @@
   max-width: 400px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .heroSectionColumn {grid-column: span 2;}
     .heroImage{
       max-width: 100%;
@@ -18,7 +18,7 @@
     }  
   }
 
-@media (min-width: 500px) {
+@media (min-width: 701px) {
     .heroSectionColumn {grid-column: span 3;}
     .heroImage{
       max-width: 80%;

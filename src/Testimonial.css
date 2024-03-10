@@ -14,12 +14,16 @@
 }
 
 .personaRaw h2{
-    width:75%;
+    width:66%;
     padding:2rem;
     box-sizing: border-box;
 }
 
 .personaRaw img{
     margin-top: 1rem;
-    width:25%;
+    width:33%;
+}
+
+.testimonial .paragraphText{
+    min-height: 6rem;
 }

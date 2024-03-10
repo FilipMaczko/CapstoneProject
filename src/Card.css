@@ -3,6 +3,10 @@
     background-color: #EDEFEE;
 }
 
+.card img{
+    width: 100%;
+}
+
 .cardContent{
     padding: 1rem;
 }
@@ -23,4 +27,8 @@
     text-align: right;
     width:25%;
     color: #EE9972;
+}
+
+.card .paragraphText{
+    min-height: 10rem;
 }

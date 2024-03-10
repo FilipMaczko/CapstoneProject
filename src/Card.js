@@ -1,16 +1,15 @@
-import Foto from './images/greek salad.jpg';
 import './Card.css';
 
-function Card() {
+function Card(props) {
   return (
     <div className = "card">
-    <img src = {Foto} alt = 'Greek salad'/>
+    <img src = {props.foto} alt = {props.dishName}/>
     <div className= 'cardContent'>
       <div className= 'cardHeader'>
-        <h1 className='cardTitle'>Greek salad</h1>
-        <span className='highlighText'>$12.99</span>
+        <h1 className='cardTitle'>{props.dishName}</h1>
+        <span className='highlighText'>${props.price}</span>
       </div>
-    <p className = 'paragraphText'>The famous greek salad of the crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
+    <p className = 'paragraphText'>{props.description} </p>
     <h2 className = 'highlighText'>Order a delivery</h2>
     </div>
     </div>
