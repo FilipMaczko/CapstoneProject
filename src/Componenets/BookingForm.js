@@ -22,7 +22,8 @@ const BookingForm = (props) => {
     const handleChange = (e) => {
       const { name, value } = e.target;
       if(name==='reservationDate'){
-        props.aviableHoursDispatch({type: "Date changed", value: ["22:00", "23:00"]});
+        console.log(`sent value: ${value}`);
+        props.aviableHoursDispatch({type: "Date changed", date: {value}});
       }
       setFormData({
         ...formData,
