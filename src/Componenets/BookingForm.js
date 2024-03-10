@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './BookingForm.css'
-
+import { submitAPI } from '../MockApi/Api';
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = (props) => {
   const hourOptions = props.aviableHours.hours.map( x => <option id={x} key={x}>{x}</option>);
-  
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
       fullName: '',
       phoneNumber: '',
@@ -82,6 +84,9 @@ const BookingForm = (props) => {
   
     const handleSubmit = (e) => {
       e.preventDefault();
+      if(submitAPI(formData)){
+        navigate('/booking-confirmed');
+      }
       // Here you can submit the form data
       console.log(formData);
     };
