@@ -1,0 +1,35 @@
+.resImage{
+    max-width: 375px;
+    max-height: 435px;
+    display: block;
+    margin-left: auto;
+  }
+  
+  .bookingHeaderColumn .paragraphText{
+    max-width: 400px;
+  }
+  
+  @media (max-width: 700px) {
+      .bookingHeaderColumn {grid-column: span 2;}
+      .resImage{
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 0px;
+      }  
+    }
+  
+  @media (min-width: 701px) {
+      .bookingHeaderColumn {grid-column: span 3;}
+      .resImage{
+        max-width: 80%;
+        max-height: 100%;
+      }
+    }
+  
+  @media (min-width: 1000px) {
+      .bookingHeaderColumn {grid-column: span 6;}
+      .resImage{
+        max-width: 75%;
+        max-height: 100%;
+      }
+    }

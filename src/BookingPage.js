@@ -1,5 +1,5 @@
 import BookingForm from './BookingForm.js';
-import HeroSection from './HeroSection.js';
+import BookingHeader from './BookingHeader.js';
 import { useReducer } from 'react';
 
 function updateTimes(state, action) {
@@ -14,7 +14,7 @@ const BookingPage = (props) => {
 
   return (
     <main>
-        {/* <HeroSection/> */}
+        <BookingHeader/>
         <BookingForm aviableHours= {aviableHours} aviableHoursDispatch= {dispatch}/>
     </main>
   );

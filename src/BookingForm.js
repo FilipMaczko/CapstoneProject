@@ -154,7 +154,7 @@ const BookingForm = (props) => {
         </div>
         <div className= 'buttonHolder'>
           <button type="submit"> 
-            {"Submit"}
+            {"Reserve a table"}
           </button>
         </div>
       </form>
