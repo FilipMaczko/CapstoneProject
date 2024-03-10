@@ -11,7 +11,9 @@ const useFetchAPI = () => {
     }
   };
 
-  const [aviableHours, dispatch] = useReducer(updateTimes, {hours: ["17.00"]});
+  const initializeTimes = { hours: JSON.parse(fetchAPI(new Date()))};
+
+  const [aviableHours, dispatch] = useReducer(updateTimes, initializeTimes);
 
   return [aviableHours, dispatch];
 };

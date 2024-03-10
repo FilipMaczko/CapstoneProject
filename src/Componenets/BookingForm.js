@@ -11,7 +11,7 @@ const BookingForm = (props) => {
       fullName: '',
       phoneNumber: '',
       reservationTime: '17:00',
-      reservationDate: '',
+      reservationDate: new Date().toISOString().split('T')[0],
       guestsCount: 1
     });
 
@@ -133,6 +133,7 @@ const BookingForm = (props) => {
           <label htmlFor="reservationDate">Reservation date</label>
           <input
             className={formErrors.dateError.length>0 ? 'errorBox' : ''}
+            placeholder={new Date().toISOString().split('T')[0]}
             type="date"
             id="reservationDate"
             name="reservationDate"
