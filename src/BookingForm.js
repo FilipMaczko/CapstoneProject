@@ -3,7 +3,7 @@ import './BookingForm.css'
 
 
 const BookingForm = (props) => {
-  const hourOptions = props.aviableHours.hours.map( x => <option id={x} key={x}>{x}</option>);
+  const hourOptions = props.aviableHours.map( x => <option id={x} key={x}>{x}</option>);
   
   const [formData, setFormData] = useState({
       fullName: '',

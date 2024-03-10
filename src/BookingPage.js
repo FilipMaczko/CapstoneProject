@@ -9,8 +9,12 @@ function updateTimes(state, action) {
     throw Error('Unknown action.');
   }
 
+function initializeTimes() {
+      return ["17:00", "18:00", "19:00", "20:00"];
+  }
+
 const BookingPage = (props) => {
-  const [aviableHours, dispatch] = useReducer(updateTimes, {hours: ["17.00","18.00","19.00","20.00"]});
+  const [aviableHours, dispatch] = useReducer(updateTimes, initializeTimes);
 
   return (
     <main>
