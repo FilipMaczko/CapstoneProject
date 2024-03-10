@@ -9,7 +9,8 @@ function HeroSection() {
                 <h1 className='displayTitle'>Little Lemon</h1>
                 <h2 className='subTitle'>Chicago</h2>
                 <p className='paragraphText'>
-                    We are family owned Mediterranean restaurant, focused on tradicional dishes served with a modern twist.
+                Welcome to Little Lemon, where tradition meets innovation in the heart of Mediterranean cuisine. 
+                Nestled in a cozy corner of the town, Little Lemon is a charming family-owned restaurant that takes pride in offering authentic dishes with a contemporary flair.
                 </p>
                 <Link to='/booking'>
                     <button>Reserve a table</button>

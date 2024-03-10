@@ -1,14 +1,14 @@
 import './Testimonial.css';
 
-function Testimonial() {
+function Testimonial(props) {
     return (
       <div className = "testimonial">
-      <h1 className="cardTitle">Rating</h1>
+      <h1 className="cardTitle">Rating: {props.rating}/5</h1>
       <div className ='personaRaw'>
-        <img src = 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt = 'persona'/>
-        <h2 className='highlighText'>User name</h2>
+        <img src = {props.personaImg} alt = 'persona'/>
+        <h2 className='highlighText'>{props.personaName}</h2>
       </div>
-      <p className= 'paragraphText'>Review text. </p>
+      <p className= 'paragraphText'>{props.review} </p>
       </div>
     );
   }

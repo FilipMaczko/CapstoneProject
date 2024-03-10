@@ -9,8 +9,9 @@ function About() {
         <h1 className='displayTitle'>Little Lemon</h1>
         <h2 className='subTitle'>Chicago</h2>
         <p className = 'paragraphText'>
-          Little lemon is a famili owned, italian restarant created by two brothers Mario and Adrian. 
-          They passion for cooking good fod and unique atmosphere is what make every meal in our restaurant into a special moment for you and your loved ones.
+        At Little Lemon, the menu is a testament to their culinary prowess, a celebration of time-honored recipes passed down through generations, infused with a creative twist that tantalizes the taste buds. From classic dishes like creamy hummus and crispy falafel to succulent kebabs and aromatic tagines, each bite is a symphony of flavors that dance on your palate.
+<br/>
+What sets Little Lemon apart is Adrian and Mario's commitment to using locally sourced, seasonal ingredients, ensuring that every dish bursts with freshness and vitality. Their deep-rooted connection to their heritage shines through in every creation, as they blend traditional flavors with innovative techniques to create culinary masterpieces that delight and inspire.
         </p>
       </div>
 
