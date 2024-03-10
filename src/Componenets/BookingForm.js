@@ -3,7 +3,7 @@ import './BookingForm.css'
 
 
 const BookingForm = (props) => {
-  const hourOptions = props.aviableHours.map( x => <option id={x} key={x}>{x}</option>);
+  const hourOptions = props.aviableHours.hours.map( x => <option id={x} key={x}>{x}</option>);
   
   const [formData, setFormData] = useState({
       fullName: '',
@@ -22,7 +22,7 @@ const BookingForm = (props) => {
     const handleChange = (e) => {
       const { name, value } = e.target;
       if(name==='reservationDate'){
-        props.aviableHoursDispatch({type: "Date changed", value: ["22.00", "23.00"]});
+        props.aviableHoursDispatch({type: "Date changed", value: ["22:00", "23:00"]});
       }
       setFormData({
         ...formData,
