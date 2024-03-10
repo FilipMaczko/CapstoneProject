@@ -5,6 +5,10 @@
   margin-left: auto;
 }
 
+.heroSectionColumn h1{
+  color: #F4CE14;
+}
+
 .heroSectionColumn .paragraphText{
   max-width: 400px;
 }
