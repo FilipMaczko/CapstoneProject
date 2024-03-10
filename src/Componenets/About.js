@@ -1,5 +1,5 @@
-import MarioAndAdrianA from './images/Mario and Adrian A.jpg';
-import MarioAndAdrianB from './images/Mario and Adrian b.jpg';
+import MarioAndAdrianA from '../images/Mario and Adrian A.jpg';
+import MarioAndAdrianB from '../images/Mario and Adrian b.jpg';
 import './About.css'
 
 function About() {

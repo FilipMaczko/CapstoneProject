@@ -1,4 +1,4 @@
-import Food from './images/restauranfood.jpg';
+import Food from '../images/restauranfood.jpg';
 import './HeroSection.css';
 import { Link } from "react-router-dom";
 

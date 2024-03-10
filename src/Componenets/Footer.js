@@ -1,4 +1,4 @@
-import Logo from './images/Asset 18@4x.png';
+import Logo from '../images/Asset 18@4x.png';
 import './Footer.css';
 import { Link } from "react-router-dom";
 
