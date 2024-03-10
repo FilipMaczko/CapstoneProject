@@ -65,7 +65,7 @@ const BookingForm = (props) => {
         }
       }
       else if(name==='reservationDate'){
-        if(Date.parse(value)-Date.parse(new Date())<0)
+        if(Date.parse(`${value}T23:59:59`)-Date.parse(new Date())<0)
         {
           setFormErrors({
             ...formErrors,
