@@ -131,7 +131,7 @@ const BookingForm = (props) => {
       <section>
       <form onSubmit={handleSubmit}>
         <div className='formControl'>
-          <label htmlFor="fullName">Full Name</label>
+          <label htmlFor="fullName" aria-label="Your full name">Full Name</label>
           <input
             className={formErrors.nameError.length>0 && fildTouched.fullName ? 'errorBox' : ''}
             id="fullName"
@@ -145,7 +145,7 @@ const BookingForm = (props) => {
         </div>
   
         <div className='formControl'>
-          <label htmlFor="phoneNumber">Phone number</label>
+          <label htmlFor="phoneNumber" aria-label="Your phone number">Phone number</label>
           <input
             className={formErrors.phoneError.length>0 && fildTouched.phoneNumber ? 'errorBox' : ''}
             type="tel"
@@ -160,7 +160,7 @@ const BookingForm = (props) => {
         </div>
   
         <div className='formControl'>
-          <label htmlFor="reservationTime">Reservation time</label>
+          <label htmlFor="reservationTime" aria-label="Time of the reservation">Reservation time</label>
           <select id="reservationTime" name="reservationTime" value={formData.reservationTime} onChange={handleChange} onBlur={handleBlur} required>
             {hourOptions}
           </select>
@@ -168,7 +168,7 @@ const BookingForm = (props) => {
         </div>
   
         <div className='formControl'>
-          <label htmlFor="reservationDate">Reservation date</label>
+          <label htmlFor="reservationDate" aria-label="Date of the reservation">Reservation date</label>
           <input
             className={formErrors.dateError.length>0 ? 'errorBox' : ''}
             placeholder={new Date().toISOString().split('T')[0]}
@@ -184,7 +184,7 @@ const BookingForm = (props) => {
         </div>
   
         <div className='formControl'>
-          <label htmlFor="guestsCount">Number of guests</label>
+          <label htmlFor="guestsCount" aria-label="How many seats at the table">Number of guests</label>
           <input
             type="number"
             placeholder="1"
@@ -199,7 +199,7 @@ const BookingForm = (props) => {
           <p className="errorMessage"></p>
         </div>
         <div className= 'buttonHolder'>
-          <button className={formCanBeSubmitted?'':'disabledButton'} disabled= {!formCanBeSubmitted} type="submit"> 
+          <button className={formCanBeSubmitted?'':'disabledButton'} disabled= {!formCanBeSubmitted} type="submit" aria-label="Table reservation submit button - On click will submit the form"> 
             {"Reserve a table"}
           </button>
         </div>

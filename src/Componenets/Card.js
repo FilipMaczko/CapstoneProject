@@ -2,7 +2,7 @@ import './Card.css';
 
 function Card(props) {
   return (
-    <div className = "card">
+    <article className = "card">
     <img src = {props.foto} alt = {props.dishName}/>
     <div className= 'cardContent'>
       <div className= 'cardHeader'>
@@ -12,7 +12,7 @@ function Card(props) {
     <p className = 'paragraphText'>{props.description} </p>
     <h2 className = 'highlighText'>Order a delivery</h2>
     </div>
-    </div>
+    </article>
   );
 }
 
