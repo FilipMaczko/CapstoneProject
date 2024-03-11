@@ -198,10 +198,12 @@ const BookingForm = (props) => {
           />
           <p className="errorMessage"></p>
         </div>
+
         <div className= 'buttonHolder'>
           <button className={formCanBeSubmitted?'':'disabledButton'} disabled= {!formCanBeSubmitted} type="submit" aria-label="Table reservation submit button - On click will submit the form"> 
             {"Reserve a table"}
           </button>
+          <p className= "paragraphText">The form will be submitted after you click this button. Please double-check if everything is correct as there will be no way to reverse it. </p>
         </div>
       </form>
       </section>
