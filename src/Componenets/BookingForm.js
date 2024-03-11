@@ -161,7 +161,7 @@ const BookingForm = (props) => {
   
         <div className='formControl'>
           <label htmlFor="reservationTime">Reservation time</label>
-          <select id="reservationTime" name="reservationTime" value={formData.reservationTime} onChange={handleChange} onBlur={handleBlur}>
+          <select id="reservationTime" name="reservationTime" value={formData.reservationTime} onChange={handleChange} onBlur={handleBlur} required>
             {hourOptions}
           </select>
           <p className="errorMessage"></p>
@@ -178,6 +178,7 @@ const BookingForm = (props) => {
             value={formData.reservationDate}
             onChange={handleChange}
             onBlur={handleBlur}
+            required
           />
           <p className="errorMessage">{formErrors.dateError}</p>
         </div>
@@ -198,7 +199,7 @@ const BookingForm = (props) => {
           <p className="errorMessage"></p>
         </div>
         <div className= 'buttonHolder'>
-          <button className={formCanBeSubmitted?'':'disabledButton'} type="submit"> 
+          <button className={formCanBeSubmitted?'':'disabledButton'} disabled= {!formCanBeSubmitted} type="submit"> 
             {"Reserve a table"}
           </button>
         </div>
