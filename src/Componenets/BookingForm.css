@@ -33,7 +33,12 @@ form .errorBox{
     color: red;
 }
 
+.hidden{
+    display: none;
+}
+
 .errorMessage{
+    display: block;
     font-size: 16px;
     font-family: 'Karla';
     font-style: medium;

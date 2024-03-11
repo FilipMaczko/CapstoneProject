@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './BookingForm.css'
 
 const BookingForm = (props) => {
@@ -16,6 +16,11 @@ const BookingForm = (props) => {
       nameError: '',
       phoneError: '',
       dateError: ''
+    });
+
+    const [fildTouched, setFildTouched] = useState({
+      fullName: false,
+      phoneNumber: false
     });
 
     const [formCanBeSubmitted, setFormCanBeSubmitted] = useState(false);
@@ -39,10 +44,15 @@ const BookingForm = (props) => {
         ...formData,
         [name]: value
       });
+      validateData(e);
     };
 
     const handleBlur = (e) =>{
-      validateData(e);
+      const { name } = e.target;
+      setFildTouched({
+        ...fildTouched,
+        [name]: true
+      });
     }
 
     const validateData = (e) => 
@@ -123,7 +133,7 @@ const BookingForm = (props) => {
         <div className='formControl'>
           <label htmlFor="fullName">Full Name</label>
           <input
-            className={formErrors.nameError.length>0 ? 'errorBox' : ''}
+            className={formErrors.nameError.length>0 && fildTouched.fullName ? 'errorBox' : ''}
             id="fullName"
             name="fullName"
             minLength="3"
@@ -131,13 +141,13 @@ const BookingForm = (props) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          <p className="errorMessage">{formErrors.nameError}</p>
+          <p className= {fildTouched.fullName ?"errorMessage" : "hidden"}>{formErrors.nameError}</p>
         </div>
   
         <div className='formControl'>
           <label htmlFor="phoneNumber">Phone number</label>
           <input
-            className={formErrors.phoneError.length>0 ? 'errorBox' : ''}
+            className={formErrors.phoneError.length>0 && fildTouched.phoneNumber ? 'errorBox' : ''}
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
@@ -146,7 +156,7 @@ const BookingForm = (props) => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          <p className="errorMessage">{formErrors.phoneError}</p>
+          <p className={fildTouched.phoneNumber ?"errorMessage" : "hidden"}>{formErrors.phoneError}</p>
         </div>
   
         <div className='formControl'>
