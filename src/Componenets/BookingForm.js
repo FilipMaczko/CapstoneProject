@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './BookingForm.css'
 
 const BookingForm = (props) => {
@@ -12,28 +12,22 @@ const BookingForm = (props) => {
       guestsCount: 1
     });
 
-    const [formCanBeSubmitted, setFormCanBeSubmitted] = useState(false);
-
     const [formErrors, setFormErrors] = useState({
       nameError: '',
       phoneError: '',
       dateError: ''
     });
-    
-    const canSubmit = () => {
 
-      console.log(formData.fullName.length>0);
-      console.log(formData.phoneNumber.length>0);
-      console.log(formErrors.dateError.length===0);
-      console.log(formErrors.nameError.length===0);
-      console.log(formErrors.phoneError.length===0);
+    const [formCanBeSubmitted, setFormCanBeSubmitted] = useState(false);
 
-      return formData.fullName.length>0
+    useEffect(() => {
+      setFormCanBeSubmitted( 
+      formData.fullName.length>0
       && formData.phoneNumber.length>0
       && formErrors.dateError.length===0
       && formErrors.nameError.length===0
-      && formErrors.phoneError.length===0;
-    }
+      && formErrors.phoneError.length===0);
+    }, [formData, formErrors]);
 
 
     const handleChange = (e) => {
@@ -49,7 +43,6 @@ const BookingForm = (props) => {
 
     const handleBlur = (e) =>{
       validateData(e);
-      setFormCanBeSubmitted(canSubmit());
     }
 
     const validateData = (e) => 
