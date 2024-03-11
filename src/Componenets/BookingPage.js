@@ -9,7 +9,7 @@ const BookingPage = (props) => {
   return (
     <main>
         <BookingHeader/>
-        <BookingForm aviableHours= {aviableHours} aviableHoursDispatch= {dispatch}/>
+        <BookingForm aviableHours= {aviableHours} aviableHoursDispatch= {dispatch} submitForm = {props.submitForm}/>
     </main>
   );
 };

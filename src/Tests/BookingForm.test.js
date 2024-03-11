@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect'; // Import Jest-Dom matchers
 import BookingForm from '../Componenets/BookingForm';
 
 test('all labels are rendered', () => {
-  render(<BookingForm aviableHours={{hours: ["17:00","18:00","19:00","20:00"]}} />);
+  render(<BookingForm aviableHours={{hours: ["17:00","18:00","19:00","20:00"], dispatchEvent: (e,a) => {}}} />);
   expect(screen.getByText('Full Name')).toBeInTheDocument();
   expect(screen.getByText('Phone number')).toBeInTheDocument();
   expect(screen.getByText('Reservation time')).toBeInTheDocument();

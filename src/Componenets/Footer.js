@@ -22,9 +22,9 @@ function Footer() {
         <div className = 'footerColumn'>
         <h1>Contact us</h1>
             <ul>
-              <li>Adress</li>
-              <li>Email</li>
-              <li>Phone number</li>
+              <li>Adress: 4535 N Lincoln Ave, Chicago, IL 60625, USA</li>
+              <li>Email: contact@liitlelemon.com</li>
+              <li>Phone number: 123 456 789</li>
             </ul>
         </div>
         <div className = 'footerColumn'>
