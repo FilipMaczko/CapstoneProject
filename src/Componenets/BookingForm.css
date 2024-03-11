@@ -53,6 +53,11 @@ form{
     align-items: center;
 }
 
+.disabledButton{
+    background-color: gray;
+    color: white;
+}
+
 form button{
     max-width: 100%;
     width: 100%;

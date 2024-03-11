@@ -12,12 +12,30 @@ const BookingForm = (props) => {
       guestsCount: 1
     });
 
+    const [formCanBeSubmitted, setFormCanBeSubmitted] = useState(false);
+
     const [formErrors, setFormErrors] = useState({
       nameError: '',
       phoneError: '',
       dateError: ''
     });
-  
+    
+    const canSubmit = () => {
+
+      console.log(formData.fullName.length>0);
+      console.log(formData.phoneNumber.length>0);
+      console.log(formErrors.dateError.length===0);
+      console.log(formErrors.nameError.length===0);
+      console.log(formErrors.phoneError.length===0);
+
+      return formData.fullName.length>0
+      && formData.phoneNumber.length>0
+      && formErrors.dateError.length===0
+      && formErrors.nameError.length===0
+      && formErrors.phoneError.length===0;
+    }
+
+
     const handleChange = (e) => {
       const { name, value } = e.target;
       if(name==='reservationDate'){
@@ -29,15 +47,27 @@ const BookingForm = (props) => {
       });
     };
 
+    const handleBlur = (e) =>{
+      validateData(e);
+      setFormCanBeSubmitted(canSubmit());
+    }
+
     const validateData = (e) => 
     {
       const { name, value } = e.target;
       if(name==='fullName'){
-        if(value.length < 3)
+        if(!value.includes(" "))
         {
           setFormErrors({
             ...formErrors,
-            nameError: `Please enter your full name (first name and last name). It must contain at least 3 characters.`
+            nameError: `Please enter your full name (first name and last name). First name must be separated from last name by a space.`
+          });
+        }
+        else if(value.length<3)
+        {
+          setFormErrors({
+            ...formErrors,
+            nameError: `Entry is too short. Please enter you first name and last name separated by a space.`
           });
         }
         else{
@@ -48,11 +78,18 @@ const BookingForm = (props) => {
         }
       }
       else if(name==='phoneNumber'){
-        if(value.length < 9)
+        if(value === '123456789')
         {
           setFormErrors({
             ...formErrors,
-            phoneError: `Phone number must contain at least 9 digits.`
+            phoneError: `This is our phone number. Please enter yours.`
+          });
+        }
+        else if(value.length < 9)
+        {
+          setFormErrors({
+            ...formErrors,
+            phoneError: `Phone number too short. Phone number must contain at least 9 digits.`
           });
         }
         else{
@@ -81,9 +118,10 @@ const BookingForm = (props) => {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      props.submitForm(formData);
-      // Here you can submit the form data
-      console.log(formData);
+      if(formCanBeSubmitted){
+        props.submitForm(formData);
+        console.log(formData);
+      }
     };
   
     return (
@@ -95,9 +133,10 @@ const BookingForm = (props) => {
             className={formErrors.nameError.length>0 ? 'errorBox' : ''}
             id="fullName"
             name="fullName"
+            minLength="3"
             value={formData.fullName}
             onChange={handleChange}
-            onBlur={validateData}
+            onBlur={handleBlur}
           />
           <p className="errorMessage">{formErrors.nameError}</p>
         </div>
@@ -109,16 +148,17 @@ const BookingForm = (props) => {
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
+            minLength="9"
             value={formData.phoneNumber}
             onChange={handleChange}
-            onBlur={validateData}
+            onBlur={handleBlur}
           />
           <p className="errorMessage">{formErrors.phoneError}</p>
         </div>
   
         <div className='formControl'>
           <label htmlFor="reservationTime">Reservation time</label>
-          <select id="reservationTime" name="reservationTime" value={formData.reservationTime} onChange={handleChange}>
+          <select id="reservationTime" name="reservationTime" value={formData.reservationTime} onChange={handleChange} onBlur={handleBlur}>
             {hourOptions}
           </select>
           <p className="errorMessage"></p>
@@ -134,7 +174,7 @@ const BookingForm = (props) => {
             name="reservationDate"
             value={formData.reservationDate}
             onChange={handleChange}
-            onBlur={validateData}
+            onBlur={handleBlur}
           />
           <p className="errorMessage">{formErrors.dateError}</p>
         </div>
@@ -150,11 +190,12 @@ const BookingForm = (props) => {
             name="guestsCount"
             value={formData.guestsCount}
             onChange={handleChange}
+            onBlur={handleBlur}
           />
           <p className="errorMessage"></p>
         </div>
         <div className= 'buttonHolder'>
-          <button type="submit"> 
+          <button className={formCanBeSubmitted?'':'disabledButton'} type="submit"> 
             {"Reserve a table"}
           </button>
         </div>
