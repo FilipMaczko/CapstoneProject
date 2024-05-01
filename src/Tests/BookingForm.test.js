@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect'; // Import Jest-Dom matchers
-import BookingForm from '../Componenets/BookingForm';
+import '@testing-library/jest-dom/extend-expect';
+import BookingForm from '../Componenets/TableBooking/BookingForm';
 import '@testing-library/jest-dom';
 
 test('all labels are rendered', () => {
