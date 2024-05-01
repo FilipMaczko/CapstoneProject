@@ -21,7 +21,7 @@ function Main() {
   (formData) => {
   if(submitAPI(formData)){
     setSubmitedFormData(formData);
-    navigate('/booking-confirmed');
+    navigate('/CapstoneProject/booking-confirmed');
   }};
 
   return (

@@ -12,7 +12,7 @@ function HeroSection() {
                 Welcome to Little Lemon, where tradition meets innovation in the heart of Mediterranean cuisine. 
                 Nestled in a cozy corner of the town, Little Lemon is a charming family-owned restaurant that takes pride in offering authentic dishes with a contemporary flair.
                 </p>
-                <Link to='/booking'>
+                <Link to='/CapstoneProject/booking'>
                     <button>Reserve a table</button>
                 </Link>
             </div>
