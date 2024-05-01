@@ -6,7 +6,7 @@ function Nav() {
         <nav className = 'headerNav'>
           <ul className = 'cardTitle'>
             <li>
-            <Link to="/">Home</Link>
+            <Link to="/CapstoneProject/">Home</Link>
             </li>
             <li>
               About
@@ -15,13 +15,10 @@ function Nav() {
               Menu
             </li>
             <li>
-            <Link to="/booking">Reservations</Link>
+            <Link to="/CapstoneProject/booking">Reservations</Link>
             </li>
             <li>
               Order Online
-            </li>
-            <li>
-              Login
             </li>
           </ul>
         </nav>

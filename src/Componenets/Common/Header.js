@@ -7,7 +7,7 @@ function Header() {
     return (
       <header>
         <div className = 'headerColumn1'>
-        <Link to="/">
+        <Link to="/CapstoneProject/">
           <img src = {Logo}  alt ="logo" width='100%'/>
         </Link>
         </div>

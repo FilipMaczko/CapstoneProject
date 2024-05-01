@@ -26,9 +26,9 @@ function Main() {
 
   return (
     <Routes> 
-        <Route path="/" element={<MainPage />}></Route>
-        <Route path="/booking" element={<BookingPage submitForm = {submitForm}/>}></Route>
-        <Route path="/booking-confirmed" element={<ConfirmedBooking formData= {submitedFormData}/>}></Route>
+        <Route path="/CapstoneProject/" element={<MainPage />}></Route>
+        <Route path="/CapstoneProject/booking" element={<BookingPage submitForm = {submitForm}/>}></Route>
+        <Route path="/CapstoneProject/booking-confirmed" element={<ConfirmedBooking formData= {submitedFormData}/>}></Route>
     </Routes>
   );
 }

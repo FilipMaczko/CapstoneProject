@@ -11,10 +11,10 @@ function Footer() {
         <nav className = 'footerColumn'>
           <h1>Navigation</h1>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/CapstoneProject/">Home</Link></li>
               <li>About</li>
               <li>Menu</li>
-              <li><Link to="/booking">Reservations</Link></li>
+              <li><Link to="/CapstoneProject/booking">Reservations</Link></li>
               <li>Order Online</li>
               <li>Login</li>
             </ul>
