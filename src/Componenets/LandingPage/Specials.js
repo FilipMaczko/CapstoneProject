@@ -1,8 +1,8 @@
 import Card from './Card';
 import './Specials.css'
-import GreekSalad from '../images/greek salad.jpg';
-import LemonDessert from '../images/lemon dessert.jpg'
-import Bruchetta from '../images/bruchetta.jpg'
+import GreekSalad from '../../images/greek salad.jpg';
+import LemonDessert from '../../images/lemon dessert.jpg'
+import Bruchetta from '../../images/bruchetta.jpg'
 
 function Specials() {
     return (

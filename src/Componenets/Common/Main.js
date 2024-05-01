@@ -1,8 +1,8 @@
-import MainPage from './MainPage.js'
-import BookingPage from './BookingPage.js';
+import MainPage from '../LandingPage/MainPage.js'
+import BookingPage from '../TableBooking/BookingPage.js';
 import { Routes, Route} from "react-router-dom";
-import ConfirmedBooking from "./ConfirmedBooking.js"
-import { submitAPI } from '../MockApi/Api';
+import ConfirmedBooking from "../TableBooking/ConfirmedBooking.js"
+import { submitAPI } from '../../MockApi/Api.js';
 import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 

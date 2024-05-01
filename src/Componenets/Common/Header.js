@@ -1,6 +1,6 @@
 import './Header.css';
 import Nav from './Nav.js';
-import Logo from '../images/Asset 16@4x.png';
+import Logo from '../../images/Asset 16@4x.png';
 import { Link } from "react-router-dom";
 
 function Header() {

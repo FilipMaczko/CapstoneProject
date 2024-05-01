@@ -1,8 +1,8 @@
 import './App.css';
 import { Helmet } from 'react-helmet';
-import Header from './Componenets/Header.js';
-import Footer from './Componenets/Footer.js';
-import Main from './Componenets/Main.js'
+import Header from './Componenets/Common/Header.js';
+import Footer from './Componenets/Common/Footer.js';
+import Main from './Componenets/Common/Main.js'
 function App() {
   return (
     <>

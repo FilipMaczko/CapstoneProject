@@ -1,4 +1,4 @@
-import Restaurant from '../images/restaurant.jpg';
+import Restaurant from '../../images/restaurant.jpg';
 import './BookingHeader.css';
 
 function BookingHeader() {
